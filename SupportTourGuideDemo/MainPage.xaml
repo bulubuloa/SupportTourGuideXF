@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="SupportTourGuideDemo.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SupportTourGuideDemo"
+             xmlns:controls="clr-namespace:SupportTourGuideDemo"
+              xmlns:behaviors="clr-namespace:SupportTourGuideXF.Animations;assembly=SupportTourGuideXF">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Margin="20"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     Orientation="Vertical"
+                     Spacing="10">
+            <Entry x:Name="EntryUserName"
+                   HeightRequest="50"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="username" />
+            <Entry x:Name="EntryPassword"
+                   HeightRequest="50"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="password" />
+            <!--<Image WidthRequest="20" HeightRequest="20" BackgroundColor="Silver">
+                <Image.Behaviors>
+                  <behaviors:FloatingPopupBehavior MessageText="Fill in your name here"
+                                                   PopupControl="{x:Reference PopupControl}" />
+                </Image.Behaviors>
+            </Image>    -->
+            <Button x:Name="ButtonLogin"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Teal"
+                    Text="Login"
+                    Clicked="Handle_Clicked"
+                    TextColor="White">
+                
+            </Button>    
+        </StackLayout>
+        
+       <!--  <controls:FloatingPopupControl x:Name="PopupControl" VerticalOptions="Fill" 
+                                       HorizontalOptions="Fill" />-->
+    </Grid>
+</ContentPage>

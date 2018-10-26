@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Grid x:Class="SupportTourGuideDemo.FloatingPopupControl"
+      xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      Opacity="0.8"
+      BackgroundColor="Gray"
+      x:Name="MessageGridContainer">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="75*" />
+        <ColumnDefinition Width="25*" />
+    </Grid.ColumnDefinitions>
+    <Grid x:Name="MessageGrid"
+          HorizontalOptions="Start"
+          VerticalOptions="Start">
+        <Grid Margin="0,0,4,0"
+              WidthRequest="15"
+              HeightRequest="15"
+              HorizontalOptions="End"
+              VerticalOptions="Start"
+              BackgroundColor="Red"
+              InputTransparent="True"
+              Rotation="45" />
+        <Grid Margin="0,7,0,0"
+              HorizontalOptions="FillAndExpand"
+              BackgroundColor="Blue"
+              InputTransparent="True"
+              Padding="10,10,10,10">
+            <Label x:Name="InfoText"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   InputTransparent="True"
+                   TextColor="White" />
+        </Grid>
+    </Grid>
+</Grid>
